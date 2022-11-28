@@ -9,4 +9,4 @@
     (expensive y)
     (add1 (expensive x))
     (expensive (expensive x))))
-(+ (f 2 3) (f 2 3))
+(+ (f 5000 5000) (f 5000 5000))
