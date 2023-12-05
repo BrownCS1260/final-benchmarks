@@ -4,6 +4,6 @@
 (define (triple n)
   (+ n (+ n n)))
 
-(if (lt (double 10) (triple 7))
+(if (< (double 10) (triple 7))
   (print 1)
   (print 2))
