@@ -2,4 +2,4 @@
 (define (g y) (- y 5))
 (define (h p) (+ (left p) (right p)))
 (define (i z) (+ (h (pair z z)) (+ (g z) (f z))))
-(print (* (i (read-num)) (i (read-num))))
+(print (+ (i (read-num)) (i (read-num))))
