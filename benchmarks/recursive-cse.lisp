@@ -16,11 +16,12 @@
         1))
 
 
-(let ((n (read-num)) (m (- 3 (+ (read-num) 8))))
+(let ((n (read-num)))
+  (let ((m (- 3 (+ (read-num) 8))))
     (do
       (println (- (fact m) (fact n)))
       (println (- (fact m) (fact n)))
       (println (+ (fact m) (fact n)))
       (println (- (mult -900 5) (+ (fact m) (fact n))))
       (println (- (fact m) (+ (mult -900 5) (fact n))))
-      (println (- (- (fact m) (fact n)) (- (fact m) (fact n))))))
+      (println (- (- (fact m) (fact n)) (- (fact m) (fact n)))))))

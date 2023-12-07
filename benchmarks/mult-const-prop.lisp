@@ -24,10 +24,11 @@
     (print 
         (do
           (fact (+ (mult 8 (mult 5 2)) (mult -23 3)))
-          (let ((x 90) (y (- 5 (+ (fact 3) 9))))
-            (do 
-              (+ x (sub1 (add1 (- x (mult 2 y)))))
-              (- y (add1 (sub1 (- (mult 2 (- y 20)) (+ x (fact y))))))
-              (add1 (mult (- x y) (+ x y)))
-              (mult x (- (add1 y) (+ (sub1 (- (fact (- 3 2)) (+ y (fact 3)))) y)))))
+          (let ((x 90))
+            (let ((y (- 5 (+ (fact 3) 9))))
+              (do 
+                (+ x (sub1 (add1 (- x (mult 2 y)))))
+                (- y (add1 (sub1 (- (mult 2 (- y 20)) (+ x (fact y))))))
+                (add1 (mult (- x y) (+ x y)))
+                (mult x (- (add1 y) (+ (sub1 (- (fact (- 3 2)) (+ y (fact 3)))) y))))))
           (fact (+ (sub1 (+ (- 3 -3) (- (mult -2 -2) 5))) 2)))))
