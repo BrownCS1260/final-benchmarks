@@ -8,12 +8,13 @@
         (- 0 (mult (- 0 x) y))
         (if (= x 0)
             0
-            y + (mult (- x 1) y))))
+            (+ y (mult (- x 1) y)))))
 
 (define (fact n)
-    (if (< n 0)
-        1
-        (mult n (fac (- n 1)))))
+    (if (< 0 n)
+        (mult n (fact (- n 1)))
+        1))
+
 
 (let ((n (read-num)) (m (- 3 (+ (read-num) 8))))
     (do

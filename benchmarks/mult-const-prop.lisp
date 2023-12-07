@@ -8,19 +8,20 @@
         (- 0 (mult (- 0 x) y))
         (if (= x 0)
             0
-            y + (mult (- x 1) y))))
+            (+ y (mult (- x 1) y)))))
 
 (define (fact n)
-    (if (< n 0)
-        1
-        (mult n (fac (- n 1)))))
+    (if (< 0 n)
+        (mult n (fact (- n 1)))
+        1))
+
 
 (if (< (fact (+ 5 (add1 (- 9 5)))) 10)
     (do 
       (fact (- (fact 3) (+ 10 (sub1 (fact 10)))))
       (fact (+ (fact 5) (- (mult (+ 5 3) (fact 3)) (add1 (sub1 (add1 (mult 3 -5)))))))
       (mult -200 38))
-    (println 
+    (print 
         (do
           (fact (+ (mult 8 (mult 5 2)) (mult -23 3)))
           (let ((x 90) (y (- 5 (+ (fact 3) 9))))
