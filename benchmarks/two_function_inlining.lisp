@@ -1,5 +1,5 @@
 (define (addThree n) (+ 3 n))
-(define (mulThree n) (* 3 n))
+(define (mulThree n) (+ n (+ n n)))
 (print (addThree (mulThree (addThree (mulThree (addThree 5))))))
 (print (mulThree (addThree (mulThree (addThree (mulThree 5))))))
 (print (mulThree (mulThree (mulThree (addThree (addThree (addThree (mulThree (mulThree (mulThree 1))))))))))
