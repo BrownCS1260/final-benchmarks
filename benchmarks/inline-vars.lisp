@@ -1,5 +1,5 @@
 (define (sum_2 i j) (+ i j))
-(define (sum_3 j k) (+ i (+ j k)))
+(define (sum_3 i j k) (+ i (+ j k)))
 
 (let ((i 2))
     (let ((j 3))
