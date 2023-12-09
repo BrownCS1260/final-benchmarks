@@ -1,7 +1,3 @@
-(define (sum_2 i j) (+ i j))
-(define (sum_3 i j k) (+ i (+ j k)))
+(define (foo x y) (+ x y))
 
-(let ((i 2))
-    (let ((j 3))
-        (let ((k 4))
-        (print (sum_2 (sum3 i j k) (sum_3 i j k))))))
+(print (+ (+ (foo (+ 2 3) (foo 4 5)) (foo (foo 1 2) (foo 3 4))) (foo (foo 6 7) (foo 8 9))))
