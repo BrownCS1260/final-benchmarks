@@ -1,7 +1,9 @@
-(define (factorial n)
-  (if (= n 0) 1 (* n (factorial (- n 1)))))
+(define (fibonacci n)
+  (if (< n 2)
+      n
+      (+ (fibonacci (- n 1)) (fibonacci (- n 2)))))
 
 (define (compute x)
-  (factorial x))
+  (fibonacci x))
 
 (print (compute 5))
