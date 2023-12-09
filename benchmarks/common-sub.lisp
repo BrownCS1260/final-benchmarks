@@ -1,9 +1,4 @@
-(define (threeMul n)
-  (if (< n 0)
-      false
-      (if (= n 3)
-        true
-        (threeMul (- n 3)))))
+(define (threeMul n) (if (< n 0) false (if (= n 3) true (threeMul (- n 3)))))
 
 (print (threeMul 30))
 (print (threeMul 6))
