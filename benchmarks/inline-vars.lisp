@@ -7,7 +7,7 @@
     let ((j 4))
     (
         let ((k 5))
-        (print (f (f k (f_1 i j) (f_2 j k) j k)))
+        (print (f_1 (f i j k) (f_2 j k)))
     )
   )
 )
