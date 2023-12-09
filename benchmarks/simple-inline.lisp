@@ -1,11 +1,11 @@
 (define (add a b) (+ a b))
 (define (subtract a b) (- a b))
-(define (multiply a b) (* a b))
+(define (increment x) (+ x 1))
+(define (decrement x) (- x 1))
 
-(define (compute x y)
-  (let ((result1 (add x y))
-        (result2 (subtract x y))
-        (result3 (multiply x y)))
-    (+ result1 result2 result3)))
+(define (compute x)
+  (let ((result1 (add x (increment x)))
+        (result2 (subtract x (decrement x))))
+    (+ result1 result2)))
 
-(print (compute 5 3))
+(print (compute 4))
