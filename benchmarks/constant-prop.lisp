@@ -1,8 +1,7 @@
 (define (constant-function)
   (let ((a 10))
     (let ((b 20))    
-       (let ((c 30))
-    (+ a b c)))))
+        (+ a b))))
 
 (define (compute x)
   (if (= x 0)
