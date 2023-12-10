@@ -1,11 +1,17 @@
-(define (sub a b) (- a b))
-(define (deep-sub a b) (sub a b))
-(define (deeper-sub a b) (deep-sub a b))
+(define (a_1 x y) (+ x y))
 
-(define (loop n)
-    (let ((out (deeper-sub n (+ n (+ n (- n 1))))))
-        (if (= n 0)
-            0
-            (deep-sub out (loop (- n 1))))))
+(define (b_1 x) (a_1 x 2))
 
-(print (loop 100))
+(define (c_1 x) (a_1 x 3))
+
+(define (d_1 x) (a_1 x 4))
+
+(define (e_1 x) (a_1 x 5))
+
+(define (f_1 x) (a_1 x 6))
+
+(define (g_1 x) (f_1 (e_1 (d_1 x))))
+
+(define (h_1 x) (c_1 (b_1 x)))
+
+(print (g_1 (h_1 0)))
