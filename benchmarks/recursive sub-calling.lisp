@@ -1,3 +1,2 @@
-(define (fibonacci n) (if (= n 0) n (if (= n 1) n (if (= n n) (fibonacci (if t (- n 1) (/ 1 0)))))))
-
-(print (+ (fibonacci 10) (* (fibonacci 10) (fibonacci 10))))
+(define (decreaser n) (if (= n 0) n (if (= n 1) n (if (= n n) (decreaser (if true (sub1 n) 4)) 5))))
+(print (+ (decreaser 10) (+ (decreaser 10) (decreaser 10))))
