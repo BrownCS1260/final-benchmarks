@@ -1,3 +1,3 @@
 (define (a x y) (+ x y))
 
-(print (a (read-num) 2))
+(print (a 2 2))
