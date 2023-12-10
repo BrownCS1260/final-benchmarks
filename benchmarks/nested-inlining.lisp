@@ -14,4 +14,4 @@
 
 (define (h_1 x) (c_1 (b_1 x)))
 
-(print (g_1 (h_1 0)))
+(print (g_1 (h_1 (read-num))))
