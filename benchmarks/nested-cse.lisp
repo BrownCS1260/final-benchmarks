@@ -1,5 +1,4 @@
 (define (mult a b) (if (= a 0) 0 (+ b (mult (sub1 a) b))))
-
 (print 
     (let 
         ((x 2)) 
