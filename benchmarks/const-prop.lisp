@@ -6,6 +6,6 @@
           (let ((z (sub1 x)))
             (if (< x 10)
                 (print y)
-                (print z) 
+                (print i) 
                 )))))))
 (f)
