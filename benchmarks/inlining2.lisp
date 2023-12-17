@@ -1,6 +1,5 @@
-(define (add_nums x y) (+ x y))
-(define (sum_all_rec x y) (
-    (if (x = 0) y 
-    (sum_all_rec (sub1 x) (add_nums x y)) 
-)))
-(print (sum_all_rec 100 0))
+(define (add a b) (+ a b))
+(define (sub c d) (- c d))
+(define (f x y) (if (= x 0) y (f (sub x 1) (add x y))))
+
+(print (f 10 0))
